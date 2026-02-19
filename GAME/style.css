@@ -1,0 +1,49 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: #f0d9b5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+#chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 60px);
+  grid-template-rows: repeat(8, 60px);
+  width: 480px;
+  margin: 0 auto 20px auto;
+  border: 5px solid #333;
+  box-shadow: 0 0 10px #333;
+  user-select: none;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.light {
+  background: #eeeed2;
+}
+
+.dark {
+  background: #769656;
+}
+
+.highlight {
+  outline: 3px solid #ffeb3b;
+}
+
+#turnIndicator {
+  font-size: 18px;
+  font-weight: bold;
+}
